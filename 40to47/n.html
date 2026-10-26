@@ -33,6 +33,30 @@ let finalArr = [];
 finalArr =arrOne.concat(arrTwo).sort().reverse();
 
 console.log(finalArr); // ["Z", "X", "D", "C", "B", "A"]
+    
+    let website = "Go";
+let words = [`${website}ogle`, "Facebook", ["Elzero", "Web", "School"]];
+
+console.log(words[words[0].lastIndexOf("o")][0].slice(words[0].lastIndexOf("o")).toUpperCase()); // ZERO
+
+
+
+let needle = "JS";
+let haystack = ["PHP", "JS", "Python"];
+if(haystack.includes(needle)) console.log("Found");
+if(haystack.indexOf(needle) != -1) console.log("Found");
+if(haystack.lastIndexOf(needle) != -1) console.log("Found");
+// Write 3 Solutions
+
+
+let arr1 = ["A", "C", "X"];
+let arr2 = ["D", "E", "F", "Y"];
+let allArrs = [];
+
+// Your Code Here
+allArrs = arr1.slice(2).concat(arr2.slice(2)).sort().join("").toLowerCase();
+
+console.log(allArrs); // fxy
     </script>
 </body>
 </html>

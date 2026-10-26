@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let start = 10;
+let end = 100;
+let exclude = 40;
+for(;start<=100;start+=10){
+    if(start==exclude)continue;
+    console.log(start);
+}
+// Output
+let start2 = 10;
+let end2 = 0;
+let stop2 = 3;
+
+// Output
+for(;start2>end2;start2-=1){
+    if(start2<10)start2=`0${start2}`;
+    console.log(start2);
+    if(start2==3)break;
+}
+
+
+let start3 = 1;
+let end3 = 6;
+let breaker3 = 2;
+
+// Output
+for(;start3<=end3;start3++){
+    console.log(start3);
+    for(breaker3=2;breaker3<=4;breaker3+=2)
+    console.log(`-- ${breaker3}`)
+}
+
+
+let index = 10;
+let jump = 2;
+
+for (;;) {
+  console.log(index);
+  
+  
+  if(index==jump*jump)
+  break;
+index-=jump;
+}
+
+// Output
+
+
+
+
+
+let friends = ["Ahmed", "Sayed", "Eman", "Mahmoud", "Ameer", "Osama", "Sameh"];
+let letter = "a";
+let counter= +!letter;
+// Output
+for(let i =0; i<friends.length;i++){
+if(friends[i][0].toLowerCase() ===letter ){
+    continue;
+}
+console.log(`${++counter} => ${friends[i]}`)}
+
+
+let start5 = 0;
+let swappedName = "elZerO";
+let res="";
+// Output
+for(let i=start5;i<swappedName.length;i++){
+    swappedName[i]===swappedName[i].toLowerCase() ?
+    res+=swappedName[i].toUpperCase():
+    res+=swappedName[i].toLowerCase();
+}
+console.log(res)
+</script>
+    
+</body>
+</html>
